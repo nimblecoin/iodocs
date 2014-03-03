@@ -1,0 +1,202 @@
+{
+    "endpoints": [
+        {
+            "name": "Network Stats",
+            "methods": [
+                {
+                    "MethodName": "Current Block Number",
+                    "Synopsis": "Get the current block number in the blockchain",
+                    "HTTPMethod": "GET",
+                    "URI": "/getblockcount",
+                    "RequiresOAuth": "N"
+                },
+                {
+                    "MethodName": "Current Network Difficulty",
+                    "Synopsis": "Get current network difficulty",
+                    "HTTPMethod": "GET",
+                    "URI": "/getdifficulty",
+                    "RequiresOAuth": "N"
+                }
+            ]
+        },
+        {
+            "name": "Pool Stats",
+            "methods": [
+                {
+                    "MethodName": "Public",
+                    "Synopsis": "Returns public information about the pool (no api-key required)",
+                    "HTTPMethod": "GET",
+                    "URI": "/public",
+                    "RequiresOAuth": "N"
+                },
+                {
+                    "MethodName": "Quick Stats",
+                    "Synopsis": "Returns pool hashrate, network hashrate, active workers, difficulty, and current block progress.",
+                    "HTTPMethod": "GET",
+                    "URI": "/getnavbardata",
+                    "RequiresOAuth": "N"
+                },
+                {
+                    "MethodName": "Block Stat Summary",
+                    "Synopsis": "Get pool block stats",
+                    "HTTPMethod": "GET",
+                    "URI": "/getblockstats",
+                    "RequiresOAuth": "N"
+                },
+                {
+                    "MethodName": "Recently Found Blocks",
+                    "Synopsis": "Get the last 20 blocks found",
+                    "HTTPMethod": "GET",
+                    "URI": "/getblocksfound",
+                    "RequiresOAuth": "N"
+                },
+                {
+                    "MethodName": "Estimated Time Per Block",
+                    "Synopsis": "Get estimated time per block based on pool hashrate (seconds)",
+                    "HTTPMethod": "GET",
+                    "URI": "/getestimatedtime",
+                    "RequiresOAuth": "N"
+                },
+                {
+                    "MethodName": "Time Since Last Block",
+                    "Synopsis": "Returns the time since the last block in seconds",
+                    "HTTPMethod": "GET",
+                    "URI": "/gettimesincelastblock",
+                    "RequiresOAuth": "N"
+                },
+                {
+                    "MethodName": "Pool Hashrate",
+                    "Synopsis": "Returns the current pool hashrate",
+                    "HTTPMethod": "GET",
+                    "URI": "/getpoolhashrate",
+                    "RequiresOAuth": "N"
+                },
+                {
+                    "MethodName": "Pool Info",
+                    "Synopsis": "Returns information about the pool",
+                    "HTTPMethod": "GET",
+                    "URI": "/getpoolinfo",
+                    "RequiresOAuth": "N"
+                },
+                {
+                    "MethodName": "Share Rate",
+                    "Synopsis": "Returns the number of shares per second",
+                    "HTTPMethod": "GET",
+                    "URI": "/getpoolsharerate",
+                    "RequiresOAuth": "N"
+                },
+                {
+                    "MethodName": "Pool Status",
+                    "Synopsis": "Returns the status of the pool",
+                    "HTTPMethod": "GET",
+                    "URI": "/getpoolstatus",
+                    "RequiresOAuth": "N"
+                },
+                {
+                    "MethodName": "Active Workers",
+                    "Synopsis": "Get the number of current active workers",
+                    "HTTPMethod": "GET",
+                    "URI": "/getcurrentworkers",
+                    "RequiresOAuth": "N"
+                },
+                {
+                    "MethodName": "Top Contributors",
+                    "Synopsis": "Get a list of top contributors by share count",
+                    "HTTPMethod": "GET",
+                    "URI": "/gettopcontributors",
+                    "RequiresOAuth": "N"
+                }
+            ]
+        },
+        {
+            "name": "User Stats",
+            "methods": [
+                {
+                    "MethodName": "User Status",
+                    "Synopsis": "Returns a user's status",
+                    "HTTPMethod": "GET",
+                    "URI": "/getuserstatus",
+                    "RequiresOAuth": "N",
+                    "parameters": [
+                        {
+                            "Name": "User ID",
+                            "Required": "N",
+                            "Default": "",
+                            "Type": "string",
+                            "Description": "Defaults to your own."
+                        }
+                    ]
+                },
+                {
+                    "MethodName": "User Hashrate",
+                    "Synopsis": "Returns a user's hashrate",
+                    "HTTPMethod": "GET",
+                    "URI": "/getuserhashrate",
+                    "RequiresOAuth": "N",
+                    "parameters": [
+                        {
+                            "Name": "User ID",
+                            "Required": "N",
+                            "Default": "",
+                            "Type": "string",
+                            "Description": "Defaults to your own."
+                        }
+                    ]
+                },
+                {
+                    "MethodName": "User Workers",
+                    "Synopsis": "Returns a list of your current workers",
+                    "HTTPMethod": "GET",
+                    "URI": "/getusertransactions",
+                    "RequiresOAuth": "N"
+                },
+                {
+                    "MethodName": "Hourly Hashrate",
+                    "Synopsis": "Returns hourly hashrate for yourself and the pool",
+                    "HTTPMethod": "GET",
+                    "URI": "/gethourlyhashrates",
+                    "RequiresOAuth": "N"
+                },
+                {
+                    "MethodName": "User Share Rate",
+                    "Synopsis": "Returns a user's share rate per second",
+                    "HTTPMethod": "GET",
+                    "URI": "/getusersharerate",
+                    "RequiresOAuth": "N",
+                    "parameters": [
+                        {
+                            "Name": "User ID",
+                            "Required": "N",
+                            "Default": "",
+                            "Type": "string",
+                            "Description": "Defaults to your own."
+                        }
+                      ]
+                },
+                {
+                    "MethodName": "User Balance",
+                    "Synopsis": "Get your current balance",
+                    "HTTPMethod": "GET",
+                    "URI": "/getuserbalance",
+                    "RequiresOAuth": "N"
+                },
+                {
+                    "MethodName": "User Transactions",
+                    "Synopsis": "Returns a user's transacation",
+                    "HTTPMethod": "GET",
+                    "URI": "/getusertransactions",
+                    "RequiresOAuth": "N",
+                    "parameters": [
+                        {
+                            "Name": "User ID",
+                            "Required": "N",
+                            "Default": "",
+                            "Type": "string",
+                            "Description": "Defaults to your own."
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
