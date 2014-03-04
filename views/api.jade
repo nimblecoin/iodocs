@@ -31,7 +31,7 @@ block content
                       label(for='key') Client ID
                   - else
                     label(for='key') API Key
-                  input(id='key', name='key', value=defaultKey, style='color=#EEEEEE')
+                  input(id='key', name='key', value=defaultKey, size="500")
               div
                   - if (apiInfo.oauth || apiInfo.oauth2)
                       label(for='secret') Client Secret

@@ -93,6 +93,7 @@ select {
 body {
   font: 13px/1.231 sans-serif;
   *font-size: small;
+  background: #E5E9EC;
 }
 
 select,
@@ -115,6 +116,7 @@ html {
 
 a:link {
   -webkit-tap-highlight-color: #ff5e99;
+  text-decoration: none;
 }
 
 a:hover,
@@ -310,17 +312,17 @@ li {
 }
 
 .credentials {
-  background-color: #f4f4e1;
-  border: 1px solid #cbcb71;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -o-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -khtml-border-radius: 5px;
-  border-radius: 5px;
+  background-color: #eef9f8;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
   overflow: hidden;
   *zoom: 1;
-  padding: 15px;
+  padding: 15px 15px 20px;
+}
+
+.credentials input {
+  font-size: 24px;
 }
 
 .credentials.authed {
@@ -357,7 +359,7 @@ li {
 }
 
 .credentials input {
-  width: 200px;
+  width: 100%;
 }
 
 .credentials #oauth-auth {
@@ -404,12 +406,12 @@ li {
 }
 
 .endpoint.expanded {
-  background-color: #fff;
+  background-color: #FFF;
 }
 
 .endpoint > .title {
   font-weight: normal;
-  padding: 20px 0 10px 10px;
+  padding: 15px 0 15px 15px;
   overflow: hidden;
   *zoom: 1;
 }
@@ -426,6 +428,7 @@ li {
 
 .endpoint > .title .actions {
   float: right;
+  margin: 5px 0 0 0;
 }
 
 .endpoint > .title .actions li {
@@ -445,13 +448,8 @@ li {
 .method {
   font-size: 14px;
   border: 1px solid #eee;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -o-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -khtml-border-radius: 5px;
-  border-radius: 5px;
-  margin: 10px 0;
+  margin: 10px 15px 20px;
+  
   /*    &.authrequired .http-method {
           background-image: url(/images/lock.png);
           background-repeat: no-repeat;
@@ -495,12 +493,6 @@ li {
 
 .method .title {
   overflow: hidden;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -o-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -khtml-border-radius: 5px;
-  border-radius: 5px;
 }
 
 .method .title:hover {
@@ -551,12 +543,6 @@ li {
   text-align: center;
   margin: 0;
   font-family: 'Inconsolata', 'Monaco', 'Consolas', 'Bitstream Vera Mono', monospace;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -o-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -khtml-border-radius: 5px;
-  border-radius: 5px;
   color: #fff;
   line-height: 33px;
   float: left;
@@ -625,7 +611,6 @@ li {
   font-size: 12px;
   padding: 10px;
   overflow: auto;
-  border: 1px solid rgba(0, 0, 0, 0.2);
   background-color: rgba(255, 255, 255, 0.9);
 }
 
@@ -644,8 +629,7 @@ li {
 }
 
 .get {
-  background: #e7f0f7;
-  border-color: #aecce4;
+  background: ##0090D9;
 }
 
 .get .http-method {

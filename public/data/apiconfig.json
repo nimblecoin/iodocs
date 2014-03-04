@@ -1,6 +1,6 @@
 {
-    "nimblecoin": {
-        "name": "Nimblecoin",
+    "api": {
+        "name": "Nimblecoin API Documentation",
         "protocol": "https",
         "baseURL": "doge.nimblecoin.us",
         "publicPath": "/api",
